@@ -1,13 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@color/floralwhite"
+    >
 
+    <TextView
+        android:id="@+id/list_view1_first"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/list_view1_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 
     <ImageView
-        android:id="@+id/first"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkgrey"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/first" />
+        android:orientation="horizontal"
+        >
+
+        <com.example.test.CircleImageView
+            android:id="@+id/list_view1_image"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/list_view1_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkgrey"
+                />
+
+            <TextView
+                android:id="@+id/list_view1_fourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/list_view1_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:layout_gravity="end"
+
+        />
+
 
 </LinearLayout>

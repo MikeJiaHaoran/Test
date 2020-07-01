@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="star">
+        <item>https:\/\/oo.xesimg.com\/creators-storage\/1590728331911_avatar.jpeg</item>
+        <item>学而思大明星</item>
+        <item>素养课直播中</item>
+        <item>学而思专业大咖精彩瞬间</item>
+    </string-array>
+
+    <string-array name="course1">
+        <item>https:\/\/oo.xesimg.com\/creators-storage\/1590728331911_avatar.jpeg</item>
+        <item>人际沟通课（进阶篇）</item>
+        <item>随到随学，有效期 1096天 共12讲</item>
+        <item>授课</item>
+        <item>轻课看世界</item>
+        <item>99</item>
+    </string-array>
+
+    <string-array name="course2">
+        <item>https:\/\/hw.xesimg.com\/ad\/files\/ec6235b873d2f9b00de7755f986df8ad.png</item>
+        <item>熊猫博士看世界：神奇植物在哪里？</item>
+        <item>随到随学，有效期 365天 共9讲</item>
+        <item>授课</item>
+        <item>熊猫博士</item>
+        <item>26</item>
+    </string-array>
+
+    <string-array name="course3">
+        <item>https:\/\/oo.xesimg.com\/creators-storage\/1590728331911_avatar.jpeg</item>
+        <item>数学思维之逻辑篇</item>
+        <item>随到随学，有效期 1096天 共6讲</item>
+        <item>授课</item>
+        <item>轻课看世界</item>
+        <item>49</item>
+    </string-array>
+
+    <string-array name="content1">
+        <item>张海阳</item>
+        <item>Take you to a whole new world</item>
+        <item>海阳老师又帅（pang）了</item>
+    </string-array>
+
+    <string-array name="content2">
+        <item>二年级语文同步课</item>
+        <item>二年级语文同步讲解、知识讲解</item>
+        <item>除了千篇一律地因为...所以...， 表达因果你还能这样造句</item>
+    </string-array>
+
+    <string-array name="content3">
+        <item>吴旭sg</item>
+        <item>状元老师，仙法大招带你玩转数学</item>
+        <item>人急了， 什么都能做出了，除了....</item>
+    </string-array>
+
+    <string-array name="content4">
+        <item>课后加点料</item>
+        <item>主讲名师答疑解惑、趣味轻松学知识</item>
+        <item>老外学中文有多拼？仿佛看到了死磕英语的自己....</item>
+    </string-array>
+
+    <string-array name="content5">
+        <item>娄帅毅</item>
+        <item>中南财经政法大学毕业，课堂氛围轻松愉悦，有很强...</item>
+        <item>这个人很懒......只留下了一段视频。</item>
+    </string-array>
+
+    <string-array name="content6">
+        <item>达吾力江</item>
+        <item>北京大学本科、研究生毕业，留学法国。学而思网校...</item>
+        <item>小达老师“达不溜”——由“抬棺”视频想到的....</item>
+    </string-array>
+
+    <string-array name="content7">
+        <item>小学升学掌上宝</item>
+        <item>小初升学一站式解决</item>
+        <item>公因数是......没有，怎么办呢?</item>
+    </string-array>
+
+    <string-array name="content8">
+        <item>神秘的编程工作室</item>
+        <item>学习编程只能当程序员？no no no未来的人工智能时...</item>
+        <item>可多不小心掉入了一个地洞，里面不但有火龙，还有......</item>
+    </string-array>
+
+    <string-array name="content9">
+        <item>学而思编程</item>
+        <item>想不想5分钟学完一堂编程课？想不想看到编程老师...</item>
+        <item>编程、AI、大数据、VR/AR它们之间的关系到底是什么呢？</item>
+    </string-array>
+
+
+
+
+
+</resources>
