@@ -2,29 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
-    android:background="@color/floralwhite"
+    android:layout_marginTop="20pt"
     >
-
-    <TextView
-        android:id="@+id/list_view1_first"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-
-    <TextView
-        android:id="@+id/list_view1_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="@color/darkgrey"
-        />
-
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -32,43 +11,110 @@
         android:orientation="horizontal"
         >
 
+        <TextView
+            android:id="@+id/list_view1_title"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt"
+            android:textColor="@color/white"
+            android:background="@color/dimgrey"
+            />
+
+        <TextView
+            android:id="@+id/list_view1_first"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:layout_marginLeft="2pt"
+            android:layout_marginStart="2pt"
+            android:textColor="@color/blackword"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/list_view1_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3pt"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5pt"
+        >
+
         <com.example.test.CircleImageView
             android:id="@+id/list_view1_image"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
              />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginLeft="3pt"
             >
 
             <TextView
                 android:id="@+id/list_view1_third"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/darkgrey"
+                android:textColor="@color/lightgreyword"
                 />
 
             <TextView
                 android:id="@+id/list_view1_fourth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/blackword"
                 />
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/list_view1_money"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/red"
-        android:layout_gravity="end"
-
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3pt"
+        android:background="@color/darkgrey"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3pt"
+        android:orientation="horizontal"
+        android:gravity="end"
+        >
+
+        <TextView
+            android:id="@+id/list_view1_old_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:textSize="7pt"
+            />
+
+        <TextView
+            android:id="@+id/list_view1_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="9pt"
+
+            />
+
+    </LinearLayout>
+
 
 
 </LinearLayout>

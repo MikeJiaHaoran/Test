@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.Html;
@@ -128,11 +129,13 @@ public class MainActivity extends Activity {
                 View view = inflater.inflate(R.layout.item_listview, parent, false);
                 ViewHolderList viewHolderList = new ViewHolderList(view);
                 viewHolderList.imageView = view.findViewById(R.id.list_view1_image);
+                viewHolderList.title = view.findViewById(R.id.list_view1_title);
                 viewHolderList.textView1 = view.findViewById(R.id.list_view1_first);
                 viewHolderList.textView2 = view.findViewById(R.id.list_view1_second);
                 viewHolderList.textView3 = view.findViewById(R.id.list_view1_third);
                 viewHolderList.textView4 = view.findViewById(R.id.list_view1_fourth);
                 viewHolderList.textView5 = view.findViewById(R.id.list_view1_money);
+                viewHolderList.textView6 = view.findViewById(R.id.list_view1_old_money);
 
                 return viewHolderList;
             }
@@ -168,7 +171,8 @@ public class MainActivity extends Activity {
                 //Bitmap bitmap = getHttpBitmap(star[0]);
                 //viewHolderGrid.imageView.setImageBitmap(bitmap);
                 viewHolderGrid.imageView.setImageResource(images.get(position));
-                viewHolderGrid.textView1.setText(Html.fromHtml(star[1]));
+                String str = "<font color = 'red'>"+"学而思"+"</font>" + "大明星";
+                viewHolderGrid.textView1.setText(Html.fromHtml(str));
                 viewHolderGrid.textView2.setText(star[2]);
                 viewHolderGrid.textView2.setBackgroundResource(R.color.moccasin);
                 viewHolderGrid.textView3.setText(star[3]);
@@ -186,11 +190,16 @@ public class MainActivity extends Activity {
                 ViewHolderList viewHolderList = (ViewHolderList) holder;
                 String[] course = getResources().getStringArray(datas.get(position));
                 viewHolderList.imageView.setImageResource(images.get(position));
+                viewHolderList.title.setText(course[6]);
                 viewHolderList.textView1.setText(course[1]);
                 viewHolderList.textView2.setText(course[2]);
                 viewHolderList.textView3.setText(course[3]);
                 viewHolderList.textView4.setText(course[4]);
                 viewHolderList.textView5.setText(String.format("%s%s", getYen(), course[5]));
+                if (course.length == 8) {
+                    viewHolderList.textView6.setText(String.format("%s%s", getYen(), course[7]));
+                    viewHolderList.textView6.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+                }
             }
         }
 
@@ -219,11 +228,13 @@ public class MainActivity extends Activity {
 
         class ViewHolderList extends RecyclerView.ViewHolder {
             private ImageView imageView;
+            private TextView title;
             private TextView textView1;
             private TextView textView2;
             private TextView textView3;
             private TextView textView4;
             private TextView textView5;
+            private TextView textView6;
 
              ViewHolderList(View itemView) {
                 super(itemView);

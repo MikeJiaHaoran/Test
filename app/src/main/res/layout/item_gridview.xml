@@ -3,11 +3,10 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="50dp"
-    android:background="@color/floralwhite"
+    android:layout_marginTop="8pt"
     >
 
-    <ImageView
+    <com.example.test.CircleImageView
         android:id="@+id/iv_grid"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -22,21 +21,28 @@
         <TextView
             android:id="@+id/first_grid"
             android:textStyle="bold"
-            android:textColor="@color/crimson"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/blackword"
+            android:textSize="7pt"
             />
 
         <TextView
             android:id="@+id/second_grid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="6pt"
+            android:layout_marginTop="3pt"
+            android:textColor="@color/lightgreyword"
             />
 
         <TextView
             android:id="@+id/third_grid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="6pt"
+            android:layout_marginTop="3pt"
+            android:textColor="@color/lightgreyword"
             />
 
      </LinearLayout>

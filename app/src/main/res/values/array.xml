@@ -14,6 +14,7 @@
         <item>授课</item>
         <item>轻课看世界</item>
         <item>99</item>
+        <item>素养</item>
     </string-array>
 
     <string-array name="course2">
@@ -23,6 +24,8 @@
         <item>授课</item>
         <item>熊猫博士</item>
         <item>26</item>
+        <item>素养</item>
+        <item>77</item>
     </string-array>
 
     <string-array name="course3">
@@ -32,6 +35,7 @@
         <item>授课</item>
         <item>轻课看世界</item>
         <item>49</item>
+        <item>数学</item>
     </string-array>
 
     <string-array name="content1">
