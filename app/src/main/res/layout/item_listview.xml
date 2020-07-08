@@ -1,120 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20pt"
+    android:layout_marginTop="20dp"
     >
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/list_view1_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/dimgrey"
+        android:textColor="@color/lavender"
+        android:textSize="5.5pt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/list_view1_title"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="6pt"
-            android:textColor="@color/white"
-            android:background="@color/dimgrey"
-            />
-
-        <TextView
-            android:id="@+id/list_view1_first"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="7pt"
-            android:layout_marginLeft="2pt"
-            android:layout_marginStart="2pt"
-            android:textColor="@color/blackword"
-            />
-
-    </LinearLayout>
-
+    <TextView
+        android:id="@+id/list_view1_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/blackword"
+        android:textSize="7pt"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/list_view1_title"
+        app:layout_constraintStart_toEndOf="@id/list_view1_title"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/list_view1_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="3pt"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_view1_title" />
 
+    <ImageView
+        android:id="@+id/list_view1_image"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_view1_second"
+        tools:ignore="ContentDescription" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/list_view1_third"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="5pt"
-        >
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/lightgreyword"
+        app:layout_constraintStart_toEndOf="@id/list_view1_image"
+        app:layout_constraintTop_toBottomOf="@id/list_view1_second" />
 
-        <com.example.test.CircleImageView
-            android:id="@+id/list_view1_image"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-             />
+    <TextView
+        android:id="@+id/list_view1_fourth"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/blackword"
+        app:layout_constraintStart_toEndOf="@id/list_view1_image"
+        app:layout_constraintTop_toBottomOf="@id/list_view1_third" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="3pt"
-            >
+    <ImageView
+        android:id="@+id/divided_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightgrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_view1_image"
+        tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/list_view1_third"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/lightgreyword"
-                />
+    <TextView
+        android:id="@+id/list_view1_old_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:textColor="@color/grey"
+        android:textSize="7pt"
+        app:layout_constraintEnd_toStartOf="@id/list_view1_money"
+        app:layout_constraintTop_toBottomOf="@id/divided_line" />
 
-            <TextView
-                android:id="@+id/list_view1_fourth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/blackword"
-                />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/list_view1_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/red"
+        android:textSize="9pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divided_line" />
 
     <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="3pt"
-        android:background="@color/darkgrey"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3pt"
-        android:orientation="horizontal"
-        android:gravity="end"
-        >
-
-        <TextView
-            android:id="@+id/list_view1_old_money"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/grey"
-            android:textSize="7pt"
-            />
-
-        <TextView
-            android:id="@+id/list_view1_money"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/red"
-            android:textSize="9pt"
-
-            />
-
-    </LinearLayout>
+        android:layout_height="8dp"
+        android:background="#F7F7F8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_view1_money"
+        tools:ignore="ContentDescription" />
 
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
