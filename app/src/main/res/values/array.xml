@@ -41,7 +41,7 @@
     <string-array name="content1">
         <item>张海阳</item>
         <item>Take you to a whole new world</item>
-        <item>海阳老师又帅（pang）了</item>
+        <item>海阳老师又帅（pang）了......</item>
     </string-array>
 
     <string-array name="content2">
@@ -64,13 +64,13 @@
 
     <string-array name="content5">
         <item>娄帅毅</item>
-        <item>中南财经政法大学毕业，课堂氛围轻松愉悦，有很强...</item>
+        <item>中南财经政法大学毕业，课堂氛围轻松愉悦，有很强的表演欲，与孩子们在聊天中给孩子们讲授知识，学而思网校新星教师</item>
         <item>这个人很懒......只留下了一段视频。</item>
     </string-array>
 
     <string-array name="content6">
         <item>达吾力江</item>
-        <item>北京大学本科、研究生毕业，留学法国。学而思网校...</item>
+        <item>北京大学本科、研究生毕业，留学法国。学而思网校功勋教师，多次评为年度优秀教师。《中国成语大会》《最爱是中华》优秀选手。</item>
         <item>小达老师“达不溜”——由“抬棺”视频想到的....</item>
     </string-array>
 
@@ -82,18 +82,13 @@
 
     <string-array name="content8">
         <item>神秘的编程工作室</item>
-        <item>学习编程只能当程序员？no no no未来的人工智能时...</item>
+        <item>学习编程只能当程序员？no no no未来的人工智能时代，编程是我们每个人的必备技能！进入神秘的编程工作室，探索编程的魅力~</item>
         <item>可多不小心掉入了一个地洞，里面不但有火龙，还有......</item>
     </string-array>
 
     <string-array name="content9">
         <item>学而思编程</item>
-        <item>想不想5分钟学完一堂编程课？想不想看到编程老师...</item>
+        <item>想不想5分钟学完一堂编程课？想不想看到编程老师不为人知的另一面？ 关注我，让你变身科技小达人，成为同学眼中最靓的崽！</item>
         <item>编程、AI、大数据、VR/AR它们之间的关系到底是什么呢？</item>
     </string-array>
-
-
-
-
-
 </resources>

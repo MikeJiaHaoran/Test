@@ -14,7 +14,6 @@ import com.example.test.Adapter.MyAdapter;
 
 public class MainActivity extends Activity {
 
-    private MyAdapter myAdapter;
     private RecyclerView recyclerView;
     private TextView tv_title;
     @Override
@@ -35,7 +34,7 @@ public class MainActivity extends Activity {
     protected void setMyAdapter() {
         tv_title.setText("学而思网校");
         tv_title.setGravity(Gravity.CENTER);
-        myAdapter = new MyAdapter(this);
+        MyAdapter myAdapter = new MyAdapter(this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
        /* final GridLayoutManager layoutManager = new GridLayoutManager(this, 1);
         layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
@@ -52,7 +51,6 @@ public class MainActivity extends Activity {
                 }
             }
         });*/
-
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(myAdapter);
     }

@@ -2,8 +2,12 @@ package com.example.test.Adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.text.Html;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,9 +30,9 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter{
 
-    public static final int TYPE_LIST = 0;
-    public static final int TYPE_GRID = 1;
-    public static final int TYPE_LIST2 = 2;
+    private static final int TYPE_LIST = 0;
+    private static final int TYPE_GRID = 1;
+    private static final int TYPE_LIST2 = 2;
     private LayoutInflater inflater;
     private List<Integer> datas = new ArrayList<>();
     private List<Integer> images = new ArrayList<>();
@@ -92,8 +96,10 @@ public class MyAdapter extends RecyclerView.Adapter{
             ViewHolderGrid viewHolderGrid = (ViewHolderGrid) holder;
             String[] star = context.getResources().getStringArray(datas.get(position));
             Glide.with(context).load(images.get(position)).apply(RequestOptions.bitmapTransform(new CircleCrop())).into(viewHolderGrid.imageView);
-            String str = "<font color = 'red'>"+"学而思"+"</font>" + "大明星";
-            viewHolderGrid.textView1.setText(Html.fromHtml(str));
+            SpannableString spannableString = new SpannableString(star[1]);
+            ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(Color.RED);
+            spannableString.setSpan(foregroundColorSpan, 0, 3, Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
+            viewHolderGrid.textView1.setText(spannableString);
             viewHolderGrid.textView2.setText(star[2]);
             viewHolderGrid.textView3.setText(star[3]);
         }
@@ -104,7 +110,20 @@ public class MyAdapter extends RecyclerView.Adapter{
             Glide.with(context).load(images.get(position)).apply(RequestOptions.bitmapTransform(new RoundedCorners(20))).into(viewHolderList2.imageView2);
             viewHolderList2.textView1.setText(content[0]);
             viewHolderList2.textView2.setText(content[1]);
-            viewHolderList2.textView3.setText(content[2]);
+            SpannableString spannableString = new SpannableString(content[2]);
+            for (int i = 0; i < content[2].length(); i++) {
+                int count = i;
+                while (count < content[2].length() && content[2].charAt(count) == '.') {
+                    count++;
+                }
+                if (count != i) {
+                    ForegroundColorSpan foregroundColorSpan = new ForegroundColorSpan(Color.RED);
+                    spannableString.setSpan(foregroundColorSpan, i, count, Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
+                    i =count;
+                }
+
+            }
+            viewHolderList2.textView3.setText(spannableString);
         }
         if (holder instanceof ViewHolderList) {
             ViewHolderList viewHolderList = (ViewHolderList) holder;

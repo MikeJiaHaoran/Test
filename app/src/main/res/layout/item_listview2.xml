@@ -31,12 +31,15 @@
 
     <TextView
         android:id="@+id/list_view2_tv2"
-        android:layout_width="wrap_content"
+        android:layout_width="333dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         app:layout_constraintStart_toEndOf="@id/list_view2_image1"
-        app:layout_constraintTop_toBottomOf="@id/list_view2_tv1" />
+        app:layout_constraintTop_toBottomOf="@id/list_view2_tv1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        />
 
     <TextView
         android:id="@+id/list_view2_tv3"
